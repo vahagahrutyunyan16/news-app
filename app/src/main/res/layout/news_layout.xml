@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flBackground"
+    android:layout_width="@dimen/dp_154"
+    android:layout_height="@dimen/dp_70"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:background="@drawable/gradient_purple_bordered_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mask_group" />
+
+    <TextView
+        android:id="@+id/tvText"
+        style="@style/Text.Roboto.Medium.12"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="@string/news_title"
+        android:textColor="@color/white" />
+
+</FrameLayout>

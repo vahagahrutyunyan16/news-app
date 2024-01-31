@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:layout_marginVertical="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            style="@style/Text.Roboto.Medium.16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/home"
+            android:textColor="@color/purple_navy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivProfile"
+            app:layout_constraintStart_toEndOf="@+id/ivMenu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/Text.Roboto.Regular.24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="@string/news"
+                android:textColor="@color/purple_navy" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNews"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/news_layout" />
+
+            <TextView
+                style="@style/Text.Roboto.Regular.24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_40"
+                android:text="@string/daily_tasks"
+                android:textColor="@color/purple_navy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_16"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_marginHorizontal="@dimen/dp_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/cornered_bg"
+                    android:backgroundTint="@color/magnolia"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.Roboto.Regular.10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="@string/daily_astr"
+                        android:textColor="@color/purple" />
+
+
+                    <TextView
+                        style="@style/Text.Roboto.Medium.24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:text="3"
+                        android:textColor="@color/dark_purple" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_marginHorizontal="@dimen/dp_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/cornered_bg"
+                    android:backgroundTint="@color/lavender_blush"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.Roboto.Regular.10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="@string/daily_sleep_astr"
+                        android:textColor="@color/orange" />
+
+
+                    <TextView
+                        style="@style/Text.Roboto.Medium.24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:backgroundTint="@color/orange"
+                        android:text="3"
+                        android:textColor="@color/orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_marginHorizontal="@dimen/dp_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/cornered_bg"
+                    android:backgroundTint="@color/cultured"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.Roboto.Regular.10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="@string/daily_mantra"
+                        android:textColor="@color/light_green" />
+
+
+                    <TextView
+                        style="@style/Text.Roboto.Medium.24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginTop="@dimen/dp_14"
+                        android:backgroundTint="@color/light_green"
+                        android:text="3"
+                        android:textColor="@color/light_green" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOvrProgress"
+                style="@style/Text.Roboto.Regular.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/overall_progress"
+                android:textColor="@color/purple_navy" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_8"
+                    android:background="@drawable/cornered_bg"
+                    android:backgroundTint="@color/snow" />
+
+                <View
+                    android:layout_width="@dimen/dp_154"
+                    android:layout_height="@dimen/dp_4"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:background="@drawable/cornered_bg"
+                    android:backgroundTint="@color/smitten" />
+
+            </FrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_126"
+                android:layout_marginHorizontal="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_42"
+                android:background="@drawable/cornered_bg"
+                android:backgroundTint="@color/magnolia">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:src="@drawable/ic_calendar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/Text.Roboto.Regular.18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="@string/how_was_day"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/Text.Roboto.Regular.12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:text="@string/lorem"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_126"
+                android:layout_marginHorizontal="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/cornered_bg"
+                android:backgroundTint="@color/lavender_blush">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:src="@drawable/ic_clock"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/Text.Roboto.Regular.18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_24"
+                    android:text="@string/current_transit"
+                    android:textColor="@color/orange_red"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/Text.Roboto.Regular.12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:text="@string/demo_siblings"
+                    android:textColor="@color/orange_red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <ImageView
+                    android:id="@+id/ivArrowRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

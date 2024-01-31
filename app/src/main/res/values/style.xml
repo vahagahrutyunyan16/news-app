@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Circular">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Text.Roboto.Regular" parent="">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Text.Roboto.Medium" parent="">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="Text.Roboto.Bold" parent="">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="Text.Roboto.Black" parent="">
+        <item name="android:fontFamily">@font/roboto_black</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.10" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+
+    <style name="Text.Roboto.Medium.12" parent="Text.Roboto.Medium">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.12" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.14" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="Text.Roboto.Medium.14" parent="Text.Roboto.Medium">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="Text.Roboto.Medium.16" parent="Text.Roboto.Medium">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.16" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.18" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="Text.Roboto.Regular.24" parent="Text.Roboto.Regular">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+    <style name="Text.Roboto.Medium.24" parent="Text.Roboto.Medium">
+        <item name="android:textSize">@dimen/sp_24</item>
+    </style>
+
+</resources>

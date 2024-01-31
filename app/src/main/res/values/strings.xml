@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">News app</string>
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="news_title">Short news title will be here</string>
+    <string name="daily_tasks">Daily Tasks:</string>
+    <string name="daily_astr">Daily astromeditation</string>
+    <string name="daily_sleep_astr">Daily sleep astromeditation</string>
+    <string name="daily_mantra">Daily mantra</string>
+    <string name="overall_progress">Your overall progress is 60%</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur
+adipscing elit. Ut vel odio en urna ultrice...</string>
+    <string name="how_was_day">How was your day?</string>
+    <string name="current_transit">Current Transist: 3rd House</string>
+    <string name="demo_siblings">This is demonstrate siblings, hobbies,
+efforts, confidence, friends and short tr...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Vahag Harutyunyan</string>
+    <string name="job">Android developer</string>
+    <string name="change_profile"><u>Change profile</u></string>
+    <string name="strong_side">Strong side:</string>
+    <string name="analytics">Analytics</string>
+    <string name="perfectionism">Perfectionism</string>
+    <string name="weak_side">Weak side:</string>
+    <string name="my_reports">My Reports:</string>
+    <string name="astro_phycho">Astro- psychological</string>
+    <string name="desc">Some short description of this type of report.</string>
+    <string name="monthly_prediction">Monthly prediction report</string>
+    <string name="daily_prediction">Daily Prediction</string>
+    <string name="love_report">Love report</string>
+    <string name="user">User</string>
+    <string name="book">Book</string>
+    <string name="moon">Moon</string>
+    <string name="message">Message</string>
+</resources>
